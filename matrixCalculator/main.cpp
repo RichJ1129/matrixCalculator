@@ -23,11 +23,29 @@ int main()
     
     for(int i = 0; i < rows; ++i)
     {
-        matrix[i] = new int[columns];
+        matrix[i] = new int[rows];
     }
+    
+    columns = rows;
     
     readMatrix(matrix, rows);
     
+    for(int i = 0; i < rows; i++)
+    {
+        for(int j = 0; j < columns; j++)
+        {
+            std::cout << matrix[i][j];
+        }
+    }
+    
+    std::cout << determinant(matrix, rows);
+    
+    for (int i = 0; i < rows; i++)
+    {
+        delete [] matrix[i];
+    }
+    
+    delete [] matrix;
     
     
     

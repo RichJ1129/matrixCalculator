@@ -31,6 +31,7 @@ void readMatrix(int **array, int size)
             for(int j = 0; j < 3; j++)
             {
                 std::cin >> array[i][j];
+                
             }
         }
     }
