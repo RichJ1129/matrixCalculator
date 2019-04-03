@@ -1,21 +1,19 @@
-//
-//  main.cpp
-//  matrixCalculator
-//
-//  Created by Richard Joseph on 4/1/19.
-//  Copyright © 2019 Richard Joseph. All rights reserved.
-//
+/*********************************************************************
+ ** Program name:
+ ** Author: Richard Joseph
+ ** Date: 4/2/19
+ ** Description: 
+ *********************************************************************/
 
 
 #include "readMatrix.hpp"
-#include "inputValidation.hpp"
 #include "determinant.hpp"
-#include <iostream>
 
 int main()
 {
     int rows;
     int columns;
+    
     std::cout << "Enter 2 for a 2x2 matrix or 3 for a 3x3 matrix:" << std::endl;
     std::cin >> rows;
     
@@ -34,11 +32,14 @@ int main()
     {
         for(int j = 0; j < columns; j++)
         {
-            std::cout << matrix[i][j];
+            std::cout << matrix[i][j] << " ";
         }
+        std::cout << std::endl;
     }
     
-    std::cout << determinant(matrix, rows);
+    std::cout << "The Determinant of the matrix is " << determinant(matrix, rows);
+    
+    std::cout << std::endl;
     
     for (int i = 0; i < rows; i++)
     {
@@ -47,8 +48,5 @@ int main()
     
     delete [] matrix;
     
-    
-    
-
     return 0;
 }

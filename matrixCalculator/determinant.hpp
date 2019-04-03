@@ -1,10 +1,9 @@
-//
-//  determinant.hpp
-//  matrixCalculator
-//
-//  Created by Richard Joseph on 4/1/19.
-//  Copyright © 2019 Richard Joseph. All rights reserved.
-//
+/*********************************************************************
+ ** Program name:
+ ** Author: Richard Joseph
+ ** Date: 4/2/19
+ ** Description:
+ *********************************************************************/
 
 #ifndef determinant_hpp
 #define determinant_hpp
