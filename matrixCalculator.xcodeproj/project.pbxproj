@@ -10,6 +10,7 @@
 		5C211C382252E92E00CAC743 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C211C372252E92E00CAC743 /* main.cpp */; };
 		5C211C402252E95800CAC743 /* readMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C211C3E2252E95800CAC743 /* readMatrix.cpp */; };
 		5C211C432252E96C00CAC743 /* determinant.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C211C412252E96C00CAC743 /* determinant.cpp */; };
+		5CED99DA22583F29002CF55B /* inputValidation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CED99D822583F29002CF55B /* inputValidation.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		5C211C3F2252E95800CAC743 /* readMatrix.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = readMatrix.hpp; sourceTree = "<group>"; };
 		5C211C412252E96C00CAC743 /* determinant.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = determinant.cpp; sourceTree = "<group>"; };
 		5C211C422252E96C00CAC743 /* determinant.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = determinant.hpp; sourceTree = "<group>"; };
+		5CED99D822583F29002CF55B /* inputValidation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = inputValidation.cpp; sourceTree = "<group>"; };
+		5CED99D922583F29002CF55B /* inputValidation.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = inputValidation.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 		5C211C362252E92E00CAC743 /* matrixCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				5CED99D922583F29002CF55B /* inputValidation.hpp */,
+				5CED99D822583F29002CF55B /* inputValidation.cpp */,
 				5C211C3F2252E95800CAC743 /* readMatrix.hpp */,
 				5C211C3E2252E95800CAC743 /* readMatrix.cpp */,
 				5C211C422252E96C00CAC743 /* determinant.hpp */,
@@ -131,6 +136,7 @@
 				5C211C432252E96C00CAC743 /* determinant.cpp in Sources */,
 				5C211C402252E95800CAC743 /* readMatrix.cpp in Sources */,
 				5C211C382252E92E00CAC743 /* main.cpp in Sources */,
+				5CED99DA22583F29002CF55B /* inputValidation.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
