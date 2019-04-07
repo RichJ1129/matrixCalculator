@@ -1,21 +1,25 @@
 /*********************************************************************
- ** Program name:
+ ** Program name:matrixCalculator
  ** Author: Richard Joseph
  ** Date: 4/2/19
- ** Description: 
+ ** Description: User is asked to input 2 or 3 based on the size of the
+                 matrix that the user wants to form. The matrix is then
+                 created and the user is prompted for integers to put in
+                 the array from left to right. After each integer press
+                 enter. Once user enters the last integer the determinant is
+                 calculated.
  *********************************************************************/
-
 
 #include "readMatrix.hpp"
 #include "determinant.hpp"
+#include "inputValidation.hpp"
 
 int main()
 {
-    int rows;
-    int columns;
+    int rows = 0;
+    int columns = 0;
     
-    std::cout << "Enter 2 for a 2x2 matrix or 3 for a 3x3 matrix:" << std::endl;
-    std::cin >> rows;
+    rows = inputValidation();
     
     int **matrix = new int *[rows];
     
@@ -37,7 +41,7 @@ int main()
         std::cout << std::endl;
     }
     
-    std::cout << "The Determinant of the matrix is " << determinant(matrix, rows);
+    std::cout << determinant(matrix, rows);
     
     std::cout << std::endl;
     

@@ -1,11 +1,8 @@
-/*********************************************************************
- ** Program name:
- ** Author: Richard Joseph
- ** Date: 4/2/19
- ** Description:
- *********************************************************************/
-
 #include "readMatrix.hpp"
+
+/* Function that passes parameters of the array and size
+and uses them in a for loop to initialize the elements of
+the array. */
 
 void readMatrix(int **array, int size)
 {
@@ -19,7 +16,6 @@ void readMatrix(int **array, int size)
                 std::cin >> array[i][j];
             }
         }
-        
     }
     
     else if(size ==  3)
@@ -30,7 +26,6 @@ void readMatrix(int **array, int size)
             for(int j = 0; j < 3; j++)
             {
                 std::cin >> array[i][j];
-                
             }
         }
     }

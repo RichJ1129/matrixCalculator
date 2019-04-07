@@ -1,9 +1,4 @@
-/*********************************************************************
- ** Program name:
- ** Author: Richard Joseph
- ** Date: 4/2/19
- ** Description:
- *********************************************************************/
+
 
 #ifndef readMatrix_hpp
 #define readMatrix_hpp

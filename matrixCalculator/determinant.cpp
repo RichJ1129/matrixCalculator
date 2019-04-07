@@ -1,11 +1,8 @@
-/*********************************************************************
- ** Program name:
- ** Author: Richard Joseph
- ** Date: 4/2/19
- ** Description:
- *********************************************************************/
 
 #include "determinant.hpp"
+
+/* Function with an if/else if statement to deterine correct equation
+ to use based on the matrix size. */
 
 int determinant(int **array, int size)
 {
@@ -26,6 +23,6 @@ int determinant(int **array, int size)
         equationThree = array[0][2] * ((array[1][0] * array[2][1]) - (array[1][1]*array[2][0]));
         determinant =  equationOne - equationTwo  + equationThree ;
     }
-    
+        
     return determinant;
 }

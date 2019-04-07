@@ -1,9 +1,3 @@
-/*********************************************************************
- ** Program name:
- ** Author: Richard Joseph
- ** Date: 4/2/19
- ** Description:
- *********************************************************************/
 
 #ifndef determinant_hpp
 #define determinant_hpp
